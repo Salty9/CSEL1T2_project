@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.SearchPlayerController">
+   <children>
+      <!-- Central VBox for Main Buttons -->
+      <VBox alignment="CENTER" spacing="20.0" AnchorPane.topAnchor="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+         <Button mnemonicParsing="false" onAction="#searchplayerbynameaction" text="Search by Player Name">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#searchplayerbyclubcountryaction" text="By Club and Country">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#searchplayerbypositionaction" text="By Position">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#searchplayerbysalaryrange" text="By Salary Range">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#searchplayerbycountrywisecount" text="Country Wise Player Count">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </VBox>
+      <!-- Fixed Back Button -->
+      <Button fx:id="button" mnemonicParsing="false" onAction="#backAction" text="Back" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

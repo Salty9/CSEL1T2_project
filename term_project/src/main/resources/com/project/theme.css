@@ -1,0 +1,157 @@
+.root {
+    -fx-background-color: #000e0a;
+}
+
+.button {
+    -fx-padding: 0.5em 1em; /* Reduced padding around text */
+    -fx-background-color: transparent;
+    -fx-border-radius: 0.3em;
+    -fx-border-width: 1px;
+    -fx-border-color: #00A97F;
+    -fx-border-style: solid;
+    -fx-cursor: hand; /* Set cursor for hover */
+    -fx-font-family: 'Arial'; /* Replace with desired font family */
+    -fx-font-size: 17px; /* Keep the font size the same */
+    -fx-font-weight: bold; /* Make the text bolder */
+    -fx-text-transform: uppercase;
+    -fx-text-fill: #00A97F;
+    -fx-transition: 0.5s;
+}
+
+.button:hover {
+    -fx-text-fill: rgb(10, 25, 30);
+    -fx-background-color: #00A97F; /* Add hover effect */
+}
+
+.button:active {
+    /* Removed -fx-effect. Use Java code for brightness effects */
+}
+
+.TextField {
+    -fx-padding: 0.5em;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0.3em;
+    -fx-border-width: 1px;
+    -fx-border-color: #00A97F;
+    -fx-border-style: solid;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 16px;
+    -fx-text-fill: #00A97F;
+    -fx-prompt-text-fill: #999999; /* Optional: style the placeholder text */
+    -fx-transition: 0.3s;
+}
+
+.TextField:focused {
+    -fx-border-color: #007A63; /*Slightly darker color when focused*/
+    -fx-border-width: 1.5px;
+}
+
+#tableViewbyname {
+    -fx-border-radius: 0.3em;
+    -fx-border-width: 1px;
+    -fx-border-color: #00A97F;
+    -fx-border-style: solid;
+    -fx-background-color: transparent;
+    /* -fx-padding: 0.5em; */
+    -fx-font-family: 'Arial';
+    -fx-font-size: 15px;
+    -fx-text-fill: #00A97F;    
+    -fx-padding: 5px;
+    -fx-wrap-text: true;
+}
+
+#tableViewbyname .column-header {
+    -fx-background-color: #000000; /* Header background color */
+    -fx-text-fill: #000000; /* Header text color */
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}
+
+#tableViewbyname .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #FFFFFF; /* Set text color to white */
+    -fx-font-family: 'Arial'; /* Optional: Ensure font consistency */
+    -fx-font-size: 15px; /* Optional: Set the font size */
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+#tableViewbyname .table-row-cell:hover {
+    -fx-background-color: rgba(0, 169, 127, 0.2); /* Hover effect for rows */
+    -fx-text-fill: #ffffff; /* Change text color when hovering */
+    -fx-wrap-text: true;
+}
+
+#tableViewbyname .table-cell {
+    -fx-text-fill: #acffea;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-border-color: #00A97F; 
+    -fx-border-width: 0;
+    -fx-wrap-text: true;
+    -fx-min-height: 60px;  /* Set minimum height for rows */
+    -fx-text-alignment: center;
+
+}
+
+#tableViewbyname .table-row-cell:hover .table-cell {
+    -fx-text-fill: #00A97F; /* Change text color on hover */
+    -fx-wrap-text: true;
+}
+
+.label {
+    -fx-text-fill: #00A97F;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 0.2em;
+    -fx-opacity: 0.9;
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 169, 127, 0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.TextField:focused {
+    -fx-border-color: #007A63; /* Slightly darker color when focused */
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 122, 99, 0.4) , 7, 0.0 , 0 , 1 );
+}
+
+
+#passwordText, #userText, #userText1, #userText2, #userText3, #userText4, #userText5, #userText6, #userText7, #playernamefield, #country, #club, #position, #salarymin, #salarymax, #clubname{
+    -fx-padding: 0.5em;
+    -fx-background-color: transparent;
+    -fx-border-radius: 0.3em;
+    -fx-border-width: 1px;
+    -fx-border-color: #00A97F;
+    -fx-border-style: solid;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00A97F;
+    -fx-prompt-text-fill: #00A97F;
+    -fx-effect: dropshadow( one-pass-box , rgba(0, 169, 127, 0.2) , 5, 0.0 , 0 , 1 );
+}
+
+#tableViewbyname .scroll-bar {
+    -fx-background-color: transparent; /* Light gray background */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+#tableViewbyname .scroll-bar .thumb {
+    -fx-background-color: #00A97F; /* Green thumb */
+    -fx-background-radius: 5px; /* Rounded corners */
+}
+
+/* Style the track (area the thumb moves along) */
+#tableViewbyname .scroll-bar .track {
+    -fx-background-color: transparent; /* Slightly darker background for track */
+}
+
+/* Style the scrollbar buttons (arrows at both ends) */
+#tableViewbyname .scroll-bar .increment-arrow, 
+#tableViewbyname .scroll-bar .decrement-arrow {
+    -fx-background-color: transparent; 
+    -fx-background-radius: 50%; /* Round buttons */
+}

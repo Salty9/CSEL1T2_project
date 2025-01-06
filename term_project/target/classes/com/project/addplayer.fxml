@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.SearchPlayerController">
+   <children>
+      <!-- Main VBox to center labels and text fields -->
+      <VBox alignment="CENTER" spacing="30.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <HBox alignment="CENTER" spacing="30.0">
+            <!-- VBox for Labels -->
+            <VBox alignment="CENTER" spacing="30.0">
+               <Label alignment="CENTER" text="Name">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Country">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Age">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Height">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Club">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Position">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Number">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" text="Salary">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Label>
+            </VBox>
+            <!-- VBox for TextFields -->
+            <VBox alignment="CENTER" spacing="20.0">
+               <TextField fx:id="userText">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText1">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText2" promptText="(in years)">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText3" promptText="(in meters)">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText4" editable="false">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText5">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText6" promptText="(Optional)">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+               <TextField fx:id="userText7">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </TextField>
+            </VBox>
+         </HBox>
+         <!-- Add Player Button -->
+         <Button mnemonicParsing="false" onAction="#addplayeraction" text="Add Player">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </VBox>
+      <!-- Back Button, anchored to bottom-right corner -->
+      <Button mnemonicParsing="false" onAction="#backAction" text="Back" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
